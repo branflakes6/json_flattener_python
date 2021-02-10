@@ -8,7 +8,7 @@ class MyTestCase(unittest.TestCase):
         test_obj = {}
         expected = {}
         result = flatten(test_obj)
-        self.assertEqual(result, expected, "Error not expected result")
+        self.assertEqual(result, expected, "Error expected empty JSON")
 
     # test the sample json given
     def test_flatten(self):
@@ -22,7 +22,7 @@ class MyTestCase(unittest.TestCase):
         }
         expected = {"a": 1, "b": True, "c.d": 3, "c.e": "test"}
         result = flatten(test_obj)
-        self.assertEqual(result, expected, "Error not expected result")
+        self.assertEqual(result, expected, "Error result not flattened correctly")
 
         # testing sample json with a new key-value pair
         test_obj = {
@@ -37,7 +37,7 @@ class MyTestCase(unittest.TestCase):
         }
         expected = {"a": 1, "b": True, "k": 10, "c.d": 3, "c.e": "test", "l": 25}
         result = flatten(test_obj)
-        self.assertEqual(result, expected, "Error not expected result")
+        self.assertEqual(result, expected, "Error result not flattened correctly")
 
     # test jsons with a lot of nesting
     def test_flatten_nesting(self):
@@ -97,7 +97,7 @@ class MyTestCase(unittest.TestCase):
         }
         expected = {'a': 1, 'b': True, 'c': 3, 'd': "test"}
         result = flatten(test_obj)
-        self.assertEqual(result, expected, "Error not expected result")
+        self.assertEqual(result, expected, "Error flattened JSON shouldn't change")
 
     # test a json with a duplicate key
     # Not sure if this is the desired behaviour but it was not specified so I chose to implement it this way
@@ -113,7 +113,7 @@ class MyTestCase(unittest.TestCase):
         }
         expected = {"b": True, "c.d": 3, "c.e": "test", "a": 3}
         result = flatten(test_obj)
-        self.assertEqual(result, expected, "Error not expected result")
+        self.assertEqual(result, expected, "Error duplicate key not handled correctly")
 
 
 if __name__ == '__main__':
