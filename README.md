@@ -43,6 +43,15 @@ JSON objects and can be used to easily manipulate data within a JSON.
 2. The second reason I decided to use Python was purely personal, I have used Python a little bit in the past
 but I was looking to further my knowledge and this seemed like a good opportunity to learn something practical.
 
+# Running
+Requires Python 3.7 or greater
+
+To run simply download flattener.py and use linux pipes to pass in files.
+
+Example: 
+```
+cat test.json | python flattener.py
+```
 
 # Approach
 ## Flatten Function
@@ -85,7 +94,7 @@ Testing is done via Python unittest. The following tests all run correctly:
 I also tested piping files via Linux pipes following the format in the problem description 
 
 ```
-cat test.json | python flatener.py
+cat test.json | python flattener.py
 ```
 
 # Time Spent & Road Blocks
