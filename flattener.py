@@ -33,7 +33,7 @@ def main():
             print(flatten(obj))  # print the result of flattening the file
 
     except Exception:
-        print("Input Error")
+        print("Input Error, ensure file is correct and try again")
 
 
 if __name__ == "__main__":
