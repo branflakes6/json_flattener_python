@@ -82,6 +82,12 @@ Testing is done via Python unittest. The following tests all run correctly:
 - Test Already Flat: Tests an already flattened JSON
 - Test Duplicate Key: Tests a JSON with a duplicate key
 
+I also tested piping files via Linux pipes following the format in the problem description 
+
+```
+cat test.json | python flatener.py
+```
+
 # Time Spent & Road Blocks
 
 I spent about 3 hours on this challenge. Most of this was spent on learning various things about Python, JSONS and file handling
