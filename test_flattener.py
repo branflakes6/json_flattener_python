@@ -60,7 +60,7 @@ class MyTestCase(unittest.TestCase):
         }
         expected = {"a": 1, "b": True, "c.d": 3, "c.e": "T", "c.f.g.h.i": 4, "c.f.g.h.j": 10, "c.f.g.h.k": 6}
         result = flatten(test_obj)
-        self.assertEqual(result, expected)
+        self.assertEqual(result, expected, "flattening with a lot of nesting not as expected")
 
         test_obj = {
             "a": 1,
@@ -85,7 +85,7 @@ class MyTestCase(unittest.TestCase):
         }
         expected = {'a': 1, 'b': True, 'c.d': 3, 'c.e': 'T', 'c.f.g.h.i': 4, 'c.f.g.h.j.k.L': 'Dog', 'c.f.g.h.m': 6}
         result = flatten(test_obj)
-        self.assertEqual(result, expected)
+        self.assertEqual(result, expected, "flattening with a lot of nesting not as expected")
 
     # test a json that is already flat
     def test_already_flat(self):
@@ -96,7 +96,6 @@ class MyTestCase(unittest.TestCase):
             'd': "test",
         }
         expected = {'a': 1, 'b': True, 'c': 3, 'd': "test"}
-        result = flatten(test_obj)
         self.assertEqual(result, expected, "Error flattened JSON shouldn't change")
 
     # test a json with a duplicate key
