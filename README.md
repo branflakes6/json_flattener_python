@@ -97,6 +97,6 @@ json.load does not preserve the ordering of the JSON.
 
 I spent about 30 minutes writing the flatten function which required me to brush up on my knowledge of Python and learn about Dictionaries.
 
-I spent about an hour writing tests due to a roadblock outlined in the testing section where I encountered a bug with Python default values.
+I spent about an hour writing tests due to a roadblock outlined in the approach section where I encountered a bug with Python default values.
 
 The rest of my time was spent improving my code, reading information relevant to the challenge and writing the README.
