@@ -93,4 +93,4 @@ I spent about 30 minutes writing the flatten function which required me to brush
 
 I spent about an hour writing tests due to a roadblock outlined in the testing section where I encountered a bug with Python default values.
 
-The rest of my time was spent improving my code and reading information relevant to the challenge.
+The rest of my time was spent improving my code, reading information relevant to the challenge and writing the README.
