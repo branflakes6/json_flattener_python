@@ -79,7 +79,7 @@ Testing is done via Python unittest. The following tests all run correctly:
 - Test Empty: Tests for an empty JSON
 - Test Flatten: Tests the example JSON
 - Test Flatten Nesting: Tests JSONS with a lost of nesting
-- Test Already Flat: Tests and already flattened JSON
+- Test Already Flat: Tests an already flattened JSON
 - Test Duplicate Key: Tests a JSON with a duplicate key
 
 # Time Spent & Road Blocks
